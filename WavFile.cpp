@@ -1,49 +1,26 @@
-////////////////////////////////////////////////////////////////////////////////
-///
-/// Classes for easy reading & writing of WAV sound files. 
-///
-/// For big-endian CPU, define _BIG_ENDIAN_ during compile-time to correctly
-/// parse the WAV files with such processors.
-/// 
-/// Admittingly, more complete WAV reader routines may exist in public domain,
-/// but the reason for 'yet another' one is that those generic WAV reader 
-/// libraries are exhaustingly large and cumbersome! Wanted to have something
-/// simpler here, i.e. something that's not already larger than rest of the
-/// SoundTouch/SoundStretch program...
-///
-/// Author        : Copyright (c) Olli Parviainen
-/// Author e-mail : oparviai 'at' iki.fi
-/// SoundTouch WWW: http://www.surina.net/soundtouch
-///
-////////////////////////////////////////////////////////////////////////////////
-//
-// Last changed  : $Date: 2008-06-25 20:17:07 $
-// File revision : $Revision: 1.4 $
-//
-// $Id: WavFile.cpp,v 1.4 2008-06-25 20:17:07 richardash1981 Exp $
-//
-////////////////////////////////////////////////////////////////////////////////
-//
-// License :
-//
-//  SoundTouch audio processing library
-//  Copyright (c) Olli Parviainen
-//
-//  This library is free software; you can redistribute it and/or
-//  modify it under the terms of the GNU Lesser General Public
-//  License as published by the Free Software Foundation; either
-//  version 2.1 of the License, or (at your option) any later version.
-//
-//  This library is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-//  Lesser General Public License for more details.
-//
-//  You should have received a copy of the GNU Lesser General Public
-//  License along with this library; if not, write to the Free Software
-//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-//
-////////////////////////////////////////////////////////////////////////////////
+/*
+ * Copyright (c) 2010-2016 Stephane Poirier
+ *
+ * stephane.poirier@oifii.org
+ *
+ * Stephane Poirier
+ * 3532 rue Ste-Famille, #3
+ * Montreal, QC, H2X 2L1
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
 
 #include <stdio.h>
 #include <stdexcept>
